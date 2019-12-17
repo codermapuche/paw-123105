@@ -1,0 +1,40 @@
+[16-Dec-2019 20:56:09 UTC] PHP Fatal error:  Cannot redeclare Turno::$_id in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 6
+[16-Dec-2019 20:56:36 UTC] PHP Notice:  Undefined index: diagnostico in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 73
+[16-Dec-2019 20:56:36 UTC] PHP Notice:  Undefined property: Turno::$diagnostico in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 89
+[16-Dec-2019 20:57:09 UTC] PHP Notice:  Undefined property: Turno::$diagnostico in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 89
+[16-Dec-2019 21:20:38 UTC] PHP Notice:  Undefined index: diagnostico in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\turno.php on line 48
+[16-Dec-2019 22:51:19 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 28
+[16-Dec-2019 22:52:11 UTC] PHP Notice:  Undefined index:  in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 42
+[16-Dec-2019 22:53:36 UTC] PHP Notice:  Trying to get property of non-object in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 28
+[16-Dec-2019 22:53:36 UTC] PHP Notice:  Trying to get property of non-object in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 29
+[16-Dec-2019 22:54:02 UTC] PHP Notice:  Undefined index:  in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 42
+[16-Dec-2019 23:49:29 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ')' in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 26
+[16-Dec-2019 23:50:19 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 26
+[16-Dec-2019 23:51:02 UTC] PHP Fatal error:  Constant expression contains invalid operations in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 5
+[16-Dec-2019 23:52:12 UTC] PHP Warning:  file_put_contents(C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\shared/cache/6c82e869edf6c6feace3b2fa69d95dcd): failed to open stream: No such file or directory in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\shared\dbal.php on line 131
+[16-Dec-2019 23:52:12 UTC] PHP Warning:  file_put_contents(C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\shared/cache/b5af2500e655b1bb765df89eb2d9fb2e): failed to open stream: No such file or directory in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\shared\dbal.php on line 131
+[16-Dec-2019 23:52:12 UTC] PHP Fatal error:  Uncaught Error: Access to undeclared static property: Turno::$_turnos in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php:31
+Stack trace:
+#0 C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\turno.php(68): Turno::getAll()
+#1 {main}
+  thrown in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 31
+[16-Dec-2019 23:52:30 UTC] PHP Fatal error:  Uncaught Error: Access to undeclared static property: Turno::$_turnos in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php:31
+Stack trace:
+#0 C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\turno.php(68): Turno::getAll()
+#1 {main}
+  thrown in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 31
+[16-Dec-2019 23:58:12 UTC] PHP Notice:  Undefined offset: 0 in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\shared\dbal.php on line 1237
+[17-Dec-2019 00:02:48 UTC] PHP Notice:  Undefined property: Turno::$props in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 33
+[17-Dec-2019 00:02:48 UTC] PHP Notice:  Undefined property: Turno::$props in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 37
+[17-Dec-2019 00:08:30 UTC] PHP Notice:  Trying to get property 'horario' of non-object in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 37
+[17-Dec-2019 00:08:30 UTC] PHP Warning:  Attempt to assign property 'horario' of non-object in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 37
+[17-Dec-2019 00:45:42 UTC] PHP Notice:  Undefined index: image in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 111
+[17-Dec-2019 00:45:42 UTC] PHP Notice:  Undefined index: image in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 111
+[17-Dec-2019 00:45:42 UTC] PHP Notice:  Undefined index: image in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 111
+[17-Dec-2019 00:45:42 UTC] PHP Notice:  Undefined index: image in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 111
+[17-Dec-2019 00:45:42 UTC] PHP Notice:  Undefined index: image in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 111
+[17-Dec-2019 00:45:42 UTC] PHP Notice:  Undefined index: image in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 111
+[17-Dec-2019 00:46:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Turno::flush() in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\turno.php:95
+Stack trace:
+#0 {main}
+  thrown in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\turno.php on line 95

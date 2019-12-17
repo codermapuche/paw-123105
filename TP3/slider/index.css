@@ -1,0 +1,247 @@
+html, body {
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 80em;
+    margin: 2em auto;
+}
+
+.slider {
+    max-width: 200vh;
+    /*/ = (100 / [ratio=.5]) /*/
+    margin: 0 auto;
+    background-color: #F7F7F8;
+    box-shadow: 0 0.25em 0.5em #aaa;
+    border: 1em solid #ffff;
+}
+
+.slider > article {
+    width: 100%;
+    padding-bottom: 50%;
+    /*/ = (100 * [ratio=.5]) /*/
+    position: relative;
+    box-sizing: border-box;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.slider > article > *, .slider > article[data-load]::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider > article[data-load]::after {
+    content: attr(data-load);
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 0 0 .3em #000;
+}
+
+.slider > article > div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 3s linear all;
+    visibility: hidden;
+}
+
+.slider > article > input {
+    visibility: hidden;
+    z-index: -2;
+}
+
+.slider > article > input:checked + div {
+    visibility: visible;
+}
+
+/* Fade Only */
+.slider > article > div:nth-of-type(1) {
+    opacity: 0;
+    z-index: 2;
+}
+
+.slider > article > input:checked + div:nth-of-type(1) {
+    opacity: 1;
+}
+
+/* Slide */
+.slider > article > div:nth-of-type(2) {
+    opacity: 1;
+    transform: translateY(100%);
+    z-index: 3;
+}
+
+.slider > article > input:checked + div:nth-of-type(2) {
+    transform: translateY(0%);
+}
+
+/* Grayscale */
+.slider > article > div:nth-of-type(3) {
+    opacity: 1;
+    filter: grayscale(100%);
+}
+
+.slider > article > input:checked + div:nth-of-type(3) {
+    opacity: 1;
+    filter: none;
+    z-index: 1;
+}
+
+.slider > nav {
+    position: relative;
+    z-index: 10;
+}
+
+.slider > nav .dots {
+    position: absolute;
+    top: -4em;
+    height: 4em;
+    width: 100%;
+    left: 0;
+    z-index: 5;
+    margin: 0;
+    padding: 1em;
+    list-style: none;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.slider > nav .dots li {
+    padding: 0;
+    margin: 0;
+}
+
+.slider > nav .dots li label {
+    display: block;
+    width: 1em;
+    height: 1em;
+    border-radius: 1em;
+    margin: .5em;
+    background-color: #fff;
+}
+
+.slider > nav .dots li label:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.slider > nav .thumbs {
+    z-index: 5;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.slider > nav .thumbs li {
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.slider > nav .thumbs li label {
+    display: block;
+    background-color: #fff;
+    border: 1em solid #ffff;
+    background-size: cover;
+    padding-top: 50%;
+    box-sizing: content-box;
+    flex: auto;
+}
+
+.slider > nav .thumbs li label:hover {
+    opacity: .9;
+    cursor: pointer;
+}
+
+
+.slider > nav .arrows {
+    z-index: 4;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-top: -50%;
+    box-sizing: border-box;
+}
+
+.slider > nav .arrows li {
+    flex: 1;
+    padding-top: 50%;
+    cursor: pointer;
+    transition: 1s linear opacity;
+    opacity: 0;
+    position: relative;
+}
+
+.slider > nav .arrows li:first-child {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), transparent);    
+}
+
+.slider > nav .arrows li:first-child::before {
+    content: "";
+    border-left: .2em solid #888;
+    transform: rotate(15deg);
+    transform-origin: left center;
+    width: 20%;
+    height: 40%;
+    position: absolute;
+    top: calc(10% + .25em);
+    bottom: 0;
+    left: 10%;
+}
+.slider > nav .arrows li:first-child::after {
+    content: "";
+    border-left: .2em solid #888;
+    transform: rotate(-15deg);
+    transform-origin: left center;
+    width: 20%;
+    height: 40%;
+    position: absolute;
+    bottom: calc(10% + .25em);
+    left: 10%;
+}
+
+.slider > nav .arrows li:last-child {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 1), transparent);    
+}
+
+.slider > nav .arrows li:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.slider > nav .arrows li:last-child::before {
+    content: "";
+    border-right: .2em solid #888;
+    transform: rotate(-15deg);
+    transform-origin: right center;
+    width: 20%;
+    height: 40%;
+    position: absolute;
+    top: calc(10% + .25em);
+    bottom: 0;
+    right: 10%;
+}
+.slider > nav .arrows li:last-child::after {
+    content: "";
+    border-right: .2em solid #888;
+    transform: rotate(15deg);
+    transform-origin: right center;
+    width: 20%;
+    height: 40%;
+    position: absolute;
+    bottom: calc(10% + .25em);
+    right: 10%;
+}

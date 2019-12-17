@@ -1,0 +1,10 @@
+[16-Dec-2019 20:56:09 UTC] PHP Fatal error:  Cannot redeclare Turno::$_id in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 6
+[16-Dec-2019 20:56:36 UTC] PHP Notice:  Undefined index: diagnostico in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 73
+[16-Dec-2019 20:56:36 UTC] PHP Notice:  Undefined property: Turno::$diagnostico in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 89
+[16-Dec-2019 20:57:09 UTC] PHP Notice:  Undefined property: Turno::$diagnostico in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 89
+[16-Dec-2019 21:20:38 UTC] PHP Notice:  Undefined index: diagnostico in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\turno.php on line 48
+[16-Dec-2019 22:51:19 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 28
+[16-Dec-2019 22:52:11 UTC] PHP Notice:  Undefined index:  in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 42
+[16-Dec-2019 22:53:36 UTC] PHP Notice:  Trying to get property of non-object in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 28
+[16-Dec-2019 22:53:36 UTC] PHP Notice:  Trying to get property of non-object in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 29
+[16-Dec-2019 22:54:02 UTC] PHP Notice:  Undefined index:  in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 42
