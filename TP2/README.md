@@ -32,8 +32,8 @@ Todos los scripts se encuentran en el directorio www
 	
 3. Realice las modificaciones necesarias para que el script del punto anterior reciba los datos mediante el método GET. ¿Qué diferencia nota? ¿Cuándo es conveniente usar cada método? Consejo: Utilice las herramientas de desarrollador de su Navegador (Pestaña Red) para observar las diferencias entre las diferentes peticiones.
 	
-	Cuando se envia mediante GET, los datos son visibles en la url, este metodo es conveniente cuando se requiere que el usuario tenga conocimiento rapido de los datos que esta enviando y eventualmente pueda modificarlos.
-	En el desarrollo del ejercicio, se opto por mantener por GET los parametros "action" e "id" con el objetivo de indicar que se esta haciendo y con que, pero enviando por POST todos los datos adicionales.
+	Cuando se envia mediante GET, los datos son visibles en la url, este metodo es conveniente cuando se requiere que el usuario tenga conocimiento rapido de los datos que esta enviando y eventualmente pueda modificarlos, siempre pensando en su uso dentro de una navegador web, aunque por supuesto este no es el unico uso posible del metodo. Generalmente se utiliza para pasar unos pocos datos que identifican al recurso que se solicita ya que la querystring posee una capacidad limitada de datos que puede transportar.
+	En el desarrollo del ejercicio, se opto por mantener en la querystring los parametros "action" e "id" con el objetivo de indicar que se esta haciendo y con que, pero enviando por POST todos los datos adicionales.
 
 4. Agregue al formulario un campo que permita adjuntar una imagen, y que la etiqueta del campo sea Diagnóstico. El campo debe validar que sea un tipo de imagen valido (.jpg o .png) y será optativo. La imagen debe almacenarse en un subdirectorio del proyecto y también debe mostrarse al usuario al mostrar el resumen del turno del ejercicio 2. ¿Qué sucede si 2 usuarios cargan imágenes con el mismo nombre de imagen? ¿Qué mecanismo implementar para evitar que un usuario sobrescriba una imagen con el mismo nombre?
 	

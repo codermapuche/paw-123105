@@ -38,3 +38,11 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\turno.php on line 95
+[21-Jan-2020 02:07:03 UTC] PHP Fatal error:  Cannot 'break' 2 levels in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\etc\apps\phpMyAdmin\export.php on line 854
+[21-Jan-2020 02:07:30 UTC] PHP Fatal error:  Cannot 'break' 2 levels in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\etc\apps\phpMyAdmin\export.php on line 854
+[21-Jan-2020 02:10:16 UTC] PHP Fatal error:  Cannot 'break' 2 levels in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\etc\apps\phpMyAdmin\export.php on line 854
+[21-Jan-2020 02:41:47 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function TurnoController::getAll(), 0 passed in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\turno.php on line 64 and exactly 1 expected in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\controller\turno.php:76
+Stack trace:
+#0 C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\turno.php(64): TurnoController->getAll()
+#1 {main}
+  thrown in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\controller\turno.php on line 76

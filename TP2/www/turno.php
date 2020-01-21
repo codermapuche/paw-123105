@@ -91,7 +91,7 @@
 			break;
 			
 		default:
-			header('HTTP/1.0 403 Forbidden');
+			header('HTTP/1.0 400 Forbidden');
 			echo 'You are forbidden!';
 			break;
 			

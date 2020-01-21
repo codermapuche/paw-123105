@@ -1,82 +1,44 @@
 # Trabajo Práctico Integrador
 
-## Entrega #1
+## Entrega #1.1
 ### Propuesta de TP Integrador
 
 ### Idea
-Se propone desarrollar un diario online para la publicacion de noticias y divulgacion de informacion relacionada con cuestiones de genero, el mismo sera donado a la ONG de un colectivo feminista local con el fin de brindar informacion a la comunidad sobre las actividades locales, las leyes vigentes, la historia del movimiento y al mismo tiempo servir como un canal de consultas y ayuda temprana para aquellas personas que sufran de violencia de genero y necesiten ayuda pero no se animen a concurrir a las autoridades policiales.
-Este proyecto servira para integrar los conocimientos adquiridos durante la materia, al mismo tiempo que se realiza un aporte de valor a la comunidad.
-Con el objetivo de brindar calidad al proyecto y agilizar tiempos, se propone que el diseño grafico del sitio lo realize un diseñador grafico profesional, el cual se ofrecio a realizar el diseño grafico del logo y de la estetica en general, realizando por mi parte, toda las tareas de maquetacion y programacion.
-Esto tambien servira como oportunidad para integrar los conocimientos adquiridos en un entorno de trabajo multidisciplinario, con profesionales de otras areas.
-
-La propuesta incluye la maquetacion y programacion del frontend del sitio creando un sitio responsive, moderno acorde a las tendencias actuales, y una webapp que permita a los usuarios instalarse la app en el celular.
-
-Se contempla la creacion de un backend en PHP para la materia PAW, donde se implementaran todas las caracteristicas necesarias de un CMS para funcionar, tambien se desarrollara el "frontend del backend" (aka webadmin) donde los usuarios autorizados podran administrar el contenido.
+Se propone desarrollar un juego de damas online, donde la interface grafica del juego sea responsive e interactiva, permitiendo a los visitantes jugar tanto desde pc como desde telefonos moviles.
+HTML5 + CSS3 + Javascript seran las herramientas a utilizar en el frontend para toda la UI del juego, mientras que en el backend, se utilizara PHP para llevar un registro de las partidas en una base de datos Mysql, permitiendo a los visitantes guardar su partida y continuarla posteriormente, incluso guardar en la pc y continuar en el movil.
+Cada usuario se identificara mediante una direccion de correo, la cual se utilizara para integrarse con el servicio externo de gravatar y mostrar la imagen asociada a dicho email, en caso de existir.
+La IA que juegue contra el usuario sera implementada en Prolog, reutilizando parte del desarrollo que realice para la materia Programacion Funcional y Logica, siendo esta parte tambien de mi autoria.
+No se utilizaran librerias de terceros para este proyecto.
+Se implementara un nexo entre PHP y Prolog el cual permitira integrar este lenguaje de IA en la web mediante un protocolo de comunicacion entre lenguajes que se desarrollara para tal fin.
 
 ### Sitemap
-	- Home
-		- Noticia
-		- Informacion
-		- Historia
-		- Referentes
-		- Politica y Leyes
+	- Inicio (Pantalla donde se registra el usuario y se vincula con Gravatar)
+	- Tablero (Pantalla principal del juego)
+	- Ranking (Top 10 de los jugadores que mas partidas ganaron)
 		
-### Wireframes (carpeta wireframes + design)
-	- Home (wireframe-home.png / wireframe-home.svg)
-		- Noticia (wireframe-noticia.png / wireframe-noticia.svg)
-		- Informacion (wireframe-informacion.png / wireframe-informacion.svg)
-		- Historia (wireframe-historia.png / wireframe-historia.svg)
-		- Referentes (wireframe-referentes.png / wireframe-referentes.svg)
-		- Politica y Leyes (wireframe-politica.png / wireframe-politica.svg)
-		
-### Design carpeta (wireframes + design)
-	- Home (diario-feminista-home-01.jpg)
-	Las interiores seran derivadas de esta propuesta estetica siguiendo la misma linea.
-		
+### Wireframes (carpeta wireframes)
+	- Inicio (Pantalla donde se ingresa el email del jugador y se vincula con Gravatar)
+	- Tablero (Pantalla interactiva donde se desarrolla el juego)
+	- Ranking (Pantalla donde se visualiza las estadisticas de los jugadores)	
+				
 ### Formularios
-	- Carga de noticias
-	- Carga de anunciantes
-	- Contacto y consultas
+	- Inicio (este formulario sirve para identificar al usuario actual, dado que solo se contabilizan los triunfos para el ranking no se implementara ningun mecanismo de autenticacion)
 	
 ### Librerias de terceros
 	- No se utilizaran librerias de terceros.
-	
-### CMS
-	- Se propone la creacion de un CMS propio, con el objetivo de brindar una interface mas amigable a usuarios menos experimentados.
-	Los contactos se administraran desde GMAIL y desde el backend se podran gestionar las noticias y los anunciantes.
-	
-### Modelos de objetos del CMS
-
-- Capa Modelo 
-	- CMS
-		- Auth
-			- Usuario (usuarios registrados de la plataforma)
-			- Grupo de usuario (perfiles de usuarios, ej: administrador y editor)
-			- Secciones (secciones del sitio, ej: noticias, anunciantes, usuarios)
-			- Permiso (permisos o privilegios, ej: alta, edicion, borrado)
-			- Session (determina los permisos del usuario en la session actual)
-		- Webadmin
-			- Crud (permite realizar operaciones crud validas segun Auth)
-			- Image (permite manipular imagenes en el backend)
-		- Data
-			- DBAL (permite interactuar con la base de datos)
-
-### Modelos de objetos del diario
-
-- Capa Modelo 
-	- Diario
-		- Noticias
-		- Anunciantes
-		- Contacto
 		
-- Capa Controlador 
-	- Diario
-		- Noticias
-		- Anunciantes
-		- Contacto
-		
-- Capa Vista 
-	- Diario
-		- Noticias
-		- Anunciantes
-		- Contacto
+### Modelos de objetos
+
+Se tendra en el backend dos clases principales, Jugadores y Partidas, cada jugador podra tener multiples partidas vinculadas pero solo puede jugar a la ultima que inicio.
+
+Cada jugador tiene los atributos:
+- Id
+- Email
+- Hash (Gravatar)
+
+Cada partida tiene los atributos:
+- Id 
+- Jugador
+- Finalizada (booleano)
+- Ganada (booleano)
+- Tablero (estado actual del tablero, serializado como texto)
