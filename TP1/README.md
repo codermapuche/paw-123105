@@ -6,7 +6,11 @@
 1. ¿Qué es un lenguaje de marcado? ¿Cuál es su utilidad? ¿Qué es un tag? ¿Qué es un atributo?
 	Es una forma de codificar un documento incorporando etiquetas o marcas que contienen información adicional acerca de la estructura del texto o su presentación.
 	Su utilidad principal es agregar informacion y metadatos al contenido.
-	Un tag es una forma de indicar un metadato, por ejemplo: *<h1>Nombre</h1>* de esta forma, estamos indicando que "Nombre" es un titulo principal.
+	Un tag es una forma de indicar un metadato, por ejemplo: 
+	```
+	<h1>Nombre</h1>
+	```	
+	De esta forma, estamos indicando que "Nombre" es un titulo principal.
 	Un atributo proporciona informacion adicional al metadato, por ejemplo: *<a href="{url}">Website</a>* de esta forma, estamos indicando que "Website" es un link y con el atributo "href" se especifica a donde hace referencia.
 2. ¿Cuál es la utilidad de HTML? ¿Qué conjunto mínimo de tags debe contener un documento elaborado en este lenguaje? Describa brevemente su utilidad.
 	HTML Es un conjunto estandar de etiquetas y atributos especialmente pensado para su uso en la web, permite definir un documento de hipertexto que los navegadores son capaces de renderizar.
