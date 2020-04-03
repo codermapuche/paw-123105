@@ -22,18 +22,16 @@ Todos los scripts se encuentran en el directorio www
 	k. 2 botones: Enviar y Limpiar.
 	Todos los elementos del formulario deben validarse del lado de cliente y servidor, con el formato que mejor se ajuste y permitan HTML y PHP. Además, tomar en cuenta de validar que los datos ingresados se encuentren en los rangos especificados.
 	
-	Se lo puede ver en funcionamiento seleccionando la opcion "Alta" del menu del index, o directamente en el link: http://localhost/turno.php?action=alta
-	La vista esta en www/view/turno-form.php donde se puede observar la ficha de este punto.
-	Las validaciones del servidor se pueden encontrar en www/model/turno.php en el metodo "validate"
+	Todos los archivos se encuentran en el directorio www
 	
 2. Extienda el ejercicio anterior para que al enviar el formulario mediante el método POST se muestre al usuario un resumen del turno.
 
-	La vista esta en www/view/turno-view.php donde se puede observar la ficha de este punto.
+	Al guardar se muestra el resumen.
 	
 3. Realice las modificaciones necesarias para que el script del punto anterior reciba los datos mediante el método GET. ¿Qué diferencia nota? ¿Cuándo es conveniente usar cada método? Consejo: Utilice las herramientas de desarrollador de su Navegador (Pestaña Red) para observar las diferencias entre las diferentes peticiones.
 	
-	Cuando se envia mediante GET, los datos son visibles en la url, este metodo es conveniente cuando se requiere que el usuario tenga conocimiento rapido de los datos que esta enviando y eventualmente pueda modificarlos, siempre pensando en su uso dentro de una navegador web, aunque por supuesto este no es el unico uso posible del metodo. Generalmente se utiliza para pasar unos pocos datos que identifican al recurso que se solicita ya que la querystring posee una capacidad limitada de datos que puede transportar.
-	En el desarrollo del ejercicio, se opto por mantener en la querystring los parametros "action" e "id" con el objetivo de indicar que se esta haciendo y con que, pero enviando por POST todos los datos adicionales.
+	Al enviar los formularios por GET los mismos son enviados en la URL en forma de querystring. En el servidor son recibidos mediante $_GET en lugar de $_POST ademas de que el metodo http cambia.
+	En general conviene enviar mediante POST, a menos que sea un formulario muy particular, como un buscador por ejemplo donde solo se envien pocos datos clave como una busqueda o un id.
 
 4. Agregue al formulario un campo que permita adjuntar una imagen, y que la etiqueta del campo sea Diagnóstico. El campo debe validar que sea un tipo de imagen valido (.jpg o .png) y será optativo. La imagen debe almacenarse en un subdirectorio del proyecto y también debe mostrarse al usuario al mostrar el resumen del turno del ejercicio 2. ¿Qué sucede si 2 usuarios cargan imágenes con el mismo nombre de imagen? ¿Qué mecanismo implementar para evitar que un usuario sobrescriba una imagen con el mismo nombre?
 	
@@ -61,8 +59,6 @@ Todos los scripts se encuentran en el directorio www
 	Se evaluo almacenar la imagen en base64, pero esto no solo hace mas lento el procesado, muy grande los archivos sino que requiere de un tratamiento especial para mostrar al navegador.
 	Se puede utilizar un sistema de almacenamiento externo, al estilo google drive o servicios similares, en estos casos requiere que el usuario realice una tarea aparte en otra plataforma e ingrese el link publico.
 	Se opto por un directorio donde el nombre de la imagen coincida con el id del turno, facilitando su lectura sin sistema y minimizando los datos a almacenar serializados.
-	El listado puede verse en: http://localhost/turno.php?action=listado
-	Desde alli se pueden editar, agregar o ver turnos.
 
 7. Construya la vista de ficha de turno. Dicha vista debe permitir acceder al turno y mostrar todos sus datos, recuperados del mecanismo de persistencia elaborado en el punto anterior. ¿Cómo se identifica y discrimina un turno de otro? Debe funcionar el link a la ficha que se encuentra en la tabla de turnos. Recuerde agregar un enlace para volver a la tabla de turnos.
 	

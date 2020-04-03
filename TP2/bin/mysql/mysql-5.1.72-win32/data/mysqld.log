@@ -28,3 +28,7 @@ InnoDB: Foreign key constraint system tables created
 191216 17:41:30  InnoDB: Initializing buffer pool, size = 8.0M
 191216 17:41:30  InnoDB: Completed initialization of buffer pool
 191216 17:41:30  InnoDB: Started; log sequence number 0 44233
+200402 21:24:16 [Note] Plugin 'FEDERATED' is disabled.
+200402 21:24:16  InnoDB: Initializing buffer pool, size = 8.0M
+200402 21:24:16  InnoDB: Completed initialization of buffer pool
+200402 21:24:16  InnoDB: Started; log sequence number 0 44233

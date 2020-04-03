@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html>
 	<head>
-			<title>Turnero</title>
+		<title>Turnero</title>
 	</head>
 	<body>
-		<header>
-			<nav>
-				<ul>
-					<li><a href="/turno.php?action=alta">Nuevo</a>
-					<li><a href="/turno.php?action=listado">Listado</a>
-				</ul>
-			</nav>
-		</header>
+		<h1><a href="/">Turnero</a></h1>
+
+		<section>
+			<?php
+				require('C/turno.php');
+				$controller = new TurnoController();
+
+				$accion = empty($_GET['accion']) ? 'index' : $_GET['accion'];
+
+				switch ($accion) {
+					case 'index':
+						$controller->index();
+						break;
+					case 'view':
+						$controller->view();
+						break;
+					case 'insert':
+						$controller->insert();
+						break;
+					case 'update':
+						$controller->update();
+						break;
+					default:
+						$controller->error('Accion invalida.');
+						break;
+				}
+
+			?>
+		</section>
 	</body>
 </html>
