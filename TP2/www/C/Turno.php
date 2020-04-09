@@ -20,8 +20,8 @@
 			$turno = new Turno;
 			$turno->load($_GET['id']);
 			$data = $turno->data(true);
-
-			if (!$turno->validate()) {
+			
+			if ($turno->validate() !== false) {
 				$this->error('El turno no existe.');
 			}
 
@@ -40,20 +40,22 @@
 				}
 
 				$turno->import($_POST);
-
-				if ( $turno->validate() ) {
+				
+				$error = $turno->validate();
+				if ( $error === false ) {
 					$turno->load();
 					$turno->guardar();
 
+					$data = $turno->data();
+					
 					if ( !empty($data['diagnostico']) ) {
 						move_uploaded_file($_FILES['diagnostico']['tmp_name'], 'images/'.$data['id'].$data['diagnostico']);
 					}
 					
-					$data = $turno->data();
 					require('V/Turno/view.php');
 					return;
 				} else {
-					$this->error('Datos invalidos.');
+					$this->error($error);
 					$data = $turno->data();
 				}
 			}
@@ -79,8 +81,9 @@
 				}
 
 				$turno->import($_POST);
-
-				if ( $turno->validate() ) {
+				
+				$error = $turno->validate();
+				if ( $error === false ) {
 					$turno->guardar();
 
 					if ( $_POST['diagnostico'] && $data['diagnostico'] && $_POST['diagnostico'] != $data['diagnostico'] ) {
@@ -95,7 +98,7 @@
 					require('V/Turno/view.php');
 					return;
 				} else {
-					$this->error('Datos invalidos.');
+					$this->error($error);
 				}
 			} else {
 				$turno->load($_GET['id']);

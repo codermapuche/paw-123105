@@ -4,31 +4,31 @@
 
 <h1>Turno #<?php echo $data['id']; ?></h1>
 
-<dl>
-	<dt>Nombre</dt>
-	<dd><?php echo $data['nombre']; ?></dd>
-	<dt>Email</dt>
-	<dd><?php echo $data['email']; ?></dd>
-	<dt>Telefono</dt>
-	<dd><?php echo $data['telefono']; ?></dd>
-	<dt>Fecha de nacimiento</dt>
-	<dd><?php echo $data['nacimiento']; ?></dd>
-	<dt>Calzado</dt>
-	<dd><?php echo $data['calzado']; ?></dd>
-	<dt>Altura</dt>
-	<dd><?php echo $data['altura']; ?></dd>
-	<dt>Pelo</dt>
-	<dd><?php echo $data['pelo']; ?></dd>
-	<dt>Fecha de turno</dt>
-	<dd><?php echo $data['turno']; ?></dd>
-	<dt>Hora de turno</dt>
-	<dd><?php echo $data['horario']; ?></dd>
+<ul>
+	<li>Nombre<br>
+	<?php echo $data['nombre']; ?></li>
+	<li>Email<br>
+	<?php echo $data['email']; ?></li>
+	<li>Telefono<br>
+	<?php echo $data['telefono']; ?></li>
+	<li>Fecha de nacimiento<br>
+	<?php echo $data['nacimiento']; ?></li>
+	<li>Calzado<br>
+	<?php echo $data['calzado']; ?></li>
+	<li>Altura<br>
+	<?php echo $data['altura']; ?></li>
+	<li>Pelo<br>
+	<?php echo $data['pelo']; ?></li>
+	<li>Fecha de turno<br>
+	<?php echo $data['turno']; ?></li>
+	<li>Hora de turno<br>
+	<?php echo $data['horario']; ?></li>
 	<?php
 		if ($data['diagnostico'] != "") {
 	?>
-	<dt>Diagnostico</dt>
-	<dd><img src="images/<?php echo $data['id'].$data['diagnostico']; ?>"></dd>
+	<li>Diagnostico<br>
+	<img src="images/<?php echo $data['id'].$data['diagnostico']; ?>"></li>
 	<?php
 		}
 	?>
-</dl>
+</ul>

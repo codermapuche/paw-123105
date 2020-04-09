@@ -8,7 +8,7 @@
 
 		<section>
 			<?php
-				require('C/turno.php');
+				require('C/Turno.php');
 				$controller = new TurnoController();
 
 				$accion = empty($_GET['accion']) ? 'index' : $_GET['accion'];

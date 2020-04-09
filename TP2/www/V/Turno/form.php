@@ -17,7 +17,7 @@
 	</div>
 	<div>
 		<label for="telefono">Telefono</label>
-		<input type="tel" id="telefono" name="telefono" pattern="\d{4} \- \d{2}[ ]\d{4}" title="Telefono (9999 - 99 9999)" value="<?php echo $data['telefono']; ?>" required>
+		<input type="tel" id="telefono" name="telefono" pattern="\d{4} \- \d{2} \d{4}" placeholder="Telefono (9999 - 99 9999)" value="<?php echo $data['telefono']; ?>" required>
 	</div>
 	<div>
 		<label for="nacimiento">Fecha de nacimiento</label>

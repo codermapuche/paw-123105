@@ -60,36 +60,36 @@
 
 		public function validate() {
 			if (empty($this->_nombre)) {
-				return false;
+				return "El nombre es invalido";
 			}
 
 			if (!filter_var($this->_email, FILTER_VALIDATE_EMAIL)) {
-				return false;
+				return "El email es invalido";
 			}
 
-			if (!preg_match("/\d{4}[ \- ]\d{2}[ ]\d{4}/i", $this->_telefono)) {
-				return false;
+			if (!preg_match("/\d{4} \- \d{2} \d{4}/i", $this->_telefono)) {
+				return "El telefono es invalido";
 			}
 
 			$d = DateTime::createFromFormat('Y-m-d', $this->_nacimiento);
 			if (!($d && $d->format('Y-m-d') == $this->_nacimiento)) {
-				return false;
+				return "La fecha de nacimiento es invalida";
 			}
 
 			$d = DateTime::createFromFormat('Y-m-d', $this->_turno);
 			if (!($d && $d->format('Y-m-d') == $this->_turno)) {
-				return false;
+				return "La fecha del turno es invalida";
 			}
 
 			if (!preg_match("/^(?:2[0-3]|[01][0-9]):[0-5][0-9]$/", $this->_horario)) {
-				return false;
+				return "El horario es invalido";
 			}
 
 			if (!in_array($this->_diagnostico, ["", ".jpg", ".png"])) {
-				return false;
+				return "El formato del diagnostico es invalido";
 			}
 
-			return true;
+			return false;
 		}
 
 		public function guardar() {

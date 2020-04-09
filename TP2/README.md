@@ -22,7 +22,9 @@ Todos los scripts se encuentran en el directorio www
 	k. 2 botones: Enviar y Limpiar.
 	Todos los elementos del formulario deben validarse del lado de cliente y servidor, con el formato que mejor se ajuste y permitan HTML y PHP. Además, tomar en cuenta de validar que los datos ingresados se encuentren en los rangos especificados.
 	
-	Todos los archivos se encuentran en el directorio www
+	Todos los archivos se encuentran en el directorio www.
+	
+	Es importante validar en ambos lados, ya que la validacion del lado del cliente se hace con fines de mejorar la experiencia del usuario legitimo y detectar errores de forma temprana, mientras que la validacion del lado del servidor se hacen para evitar que usuarios malintencionados que se saltean las validaciones del cliente puedan ingresar datos erroneos o incorrectos.
 	
 2. Extienda el ejercicio anterior para que al enviar el formulario mediante el método POST se muestre al usuario un resumen del turno.
 
@@ -32,6 +34,11 @@ Todos los scripts se encuentran en el directorio www
 	
 	Al enviar los formularios por GET los mismos son enviados en la URL en forma de querystring. En el servidor son recibidos mediante $_GET en lugar de $_POST ademas de que el metodo http cambia.
 	En general conviene enviar mediante POST, a menos que sea un formulario muy particular, como un buscador por ejemplo donde solo se envien pocos datos clave como una busqueda o un id.
+	Los metodos HTTP en total son 6, los idempotentes GET, HEAD, PUT, DELETE y los restantes PATCH y POST.
+	Tambien existen otros 3 metodos, CONNECT, OPTIONS y TRACE que cumplen funciones de control.
+	Cada metodo http se corresponde semanticamente con una operacion, en particular, deberia utilizarse POST para crear registros nuevos y PUT para actualizarlos.
+	Cada metodo tiene sus propias limitaciones en cuanto a volumenes de datos, mientras que GET y HEAD estan limitados por el tamanio de la Querystring, POST, PATCH y PUT envian sus datos en el body del mensaje cuyos limites son mayores.
+	En la querystring los datos deben ir codificados en el formato de esta, sin embargo cuando viajan en el payload pueden ir codificados en diferentes formatos segun la conveniencia, ya que los mismos son tratados como un array de bytes.
 
 4. Agregue al formulario un campo que permita adjuntar una imagen, y que la etiqueta del campo sea Diagnóstico. El campo debe validar que sea un tipo de imagen valido (.jpg o .png) y será optativo. La imagen debe almacenarse en un subdirectorio del proyecto y también debe mostrarse al usuario al mostrar el resumen del turno del ejercicio 2. ¿Qué sucede si 2 usuarios cargan imágenes con el mismo nombre de imagen? ¿Qué mecanismo implementar para evitar que un usuario sobrescriba una imagen con el mismo nombre?
 	
@@ -39,7 +46,8 @@ Todos los scripts se encuentran en el directorio www
 	
 5. Utilice las herramientas para desarrollador del navegador y observe cómo fueron codificados por el navegador los datos enviados por el navegador en los dos ejercicios anteriores. ¿Qué diferencia nota?
 
-	Se debio cambiar el mecanismo de codificacion del formulario, ahora los datos se envian utilizando "multipart/form-data"
+	Se debio cambiar el mecanismo de codificacion del formulario, ahora los datos se envian utilizando "multipart/form-data", ya que la misma modifica la forma en la que se codifican los datos binarios, cuando se trata del envio de adjuntos conviene esta codificacion ya que reduce en hasta un 66% la cantidad de bytes necesarios para el envio.
+	Si solo son campos de texto, puede utilizarse la otra ya que no habra diferencias significativas.
 	
 6. Agregar persistencia al sistema de turnos. Todos los datos del formulario deben almacenarse mediante algún mecanismo para poder ser recuperados posteriormente. Crear una nueva vista que le permita a un empleado administrativo visualizar todos los turnos en una tabla. La tabla debe incluir los siguientes campos:
 	a. Fecha del turno
