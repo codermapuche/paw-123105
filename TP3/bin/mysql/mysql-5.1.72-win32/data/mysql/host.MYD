@@ -10,3 +10,9 @@ Version: '5.1.72-community'  socket: ''  port: 3306  MySQL Community Server (GPL
 200422 22:29:35 [Note] C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\bin\mysql\mysql-5.1.72-win32\bin\mysqld: Normal shutdown
 
 200422 22:29:35 [Note] Event Scheduler: Purging the queue. 0 events
+200430  0:37:39 [Note] Event Scheduler: Loaded 0 events
+200430  0:37:39 [Note] C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\bin\mysql\mysql-5.1.72-win32\bin\mysqld: ready for connections.
+Version: '5.1.72-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+200430  0:39:44 [Note] C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\bin\mysql\mysql-5.1.72-win32\bin\mysqld: Normal shutdown
+
+200430  0:39:44 [Note] Event Scheduler: Purging the queue. 0 events

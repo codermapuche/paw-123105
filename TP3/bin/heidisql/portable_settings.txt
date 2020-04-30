@@ -50,6 +50,9 @@ ColPositions_frmTableEditor.listForeignKeys<|||>1<|||>0,1,2,3,4,5
 ColSort_frmTableEditor.listForeignKeys<|||>1<|||>-1,0
 MainWinLeft<|||>3<|||>89
 MainWinMaximized<|||>3<|||>1
+ExportSQL_Filenames<|||>1<|||>C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\bd.sql<{{{><}}}>
+ExportSQL_CreateDatabases<|||>3<|||>1
+ExportSQL_CreateTables<|||>3<|||>1
 Servers\Laragon\SessionCreated<|||>1<|||>2017-02-14 13:41:54
 Servers\Laragon\Host<|||>1<|||>localhost
 Servers\Laragon\WindowsAuth<|||>3<|||>0
@@ -80,7 +83,7 @@ Servers\Laragon\SSL_CA<|||>1<|||>
 Servers\Laragon\SSL_Cipher<|||>1<|||>
 Servers\Laragon\RefusedCount<|||>3<|||>4
 Servers\Laragon\ServerVersionFull<|||>1<|||>5.1.72-community - MySQL Community Server (GPL)
-Servers\Laragon\ConnectCount<|||>3<|||>6
+Servers\Laragon\ConnectCount<|||>3<|||>7
 Servers\Laragon\ServerVersion<|||>3<|||>50172
-Servers\Laragon\LastConnect<|||>1<|||>2020-04-22 23:57:04
+Servers\Laragon\LastConnect<|||>1<|||>2020-04-30 00:37:51
 Servers\Laragon\lastUsedDB<|||>1<|||>turnero
