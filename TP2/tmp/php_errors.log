@@ -173,3 +173,5 @@
 [03-Apr-2020 02:30:56 UTC] PHP Warning:  include(): Failed opening 'sig1.php' for inclusion (include_path='.;C:/Users/Nehuen/Desktop/UNLu/paw-123105/TP2/etc/php/pear') in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP2\www\yt.php on line 203
 [03-Apr-2020 02:30:56 UTC] PHP Notice:  Undefined variable: a in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP2\www\yt.php on line 204
 [03-Apr-2020 02:30:56 UTC] PHP Warning:  join(): Invalid arguments passed in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP2\www\yt.php on line 204
+[18-May-2020 15:11:46 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP2\www\solicitud.php on line 2
+[18-May-2020 15:11:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP2\www\solicitud.php on line 9
