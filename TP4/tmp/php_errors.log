@@ -1,48 +1,202 @@
-[16-Dec-2019 20:56:09 UTC] PHP Fatal error:  Cannot redeclare Turno::$_id in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 6
-[16-Dec-2019 20:56:36 UTC] PHP Notice:  Undefined index: diagnostico in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 73
-[16-Dec-2019 20:56:36 UTC] PHP Notice:  Undefined property: Turno::$diagnostico in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 89
-[16-Dec-2019 20:57:09 UTC] PHP Notice:  Undefined property: Turno::$diagnostico in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 89
-[16-Dec-2019 21:20:38 UTC] PHP Notice:  Undefined index: diagnostico in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\turno.php on line 48
-[16-Dec-2019 22:51:19 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 28
-[16-Dec-2019 22:52:11 UTC] PHP Notice:  Undefined index:  in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 42
-[16-Dec-2019 22:53:36 UTC] PHP Notice:  Trying to get property of non-object in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 28
-[16-Dec-2019 22:53:36 UTC] PHP Notice:  Trying to get property of non-object in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 29
-[16-Dec-2019 22:54:02 UTC] PHP Notice:  Undefined index:  in C:\Users\Nehuen\Desktop\paw\paw-123105\TP2\www\model\turno.php on line 42
-[16-Dec-2019 23:49:29 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ')' in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 26
-[16-Dec-2019 23:50:19 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 26
-[16-Dec-2019 23:51:02 UTC] PHP Fatal error:  Constant expression contains invalid operations in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 5
-[16-Dec-2019 23:52:12 UTC] PHP Warning:  file_put_contents(C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\shared/cache/6c82e869edf6c6feace3b2fa69d95dcd): failed to open stream: No such file or directory in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\shared\dbal.php on line 131
-[16-Dec-2019 23:52:12 UTC] PHP Warning:  file_put_contents(C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\shared/cache/b5af2500e655b1bb765df89eb2d9fb2e): failed to open stream: No such file or directory in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\shared\dbal.php on line 131
-[16-Dec-2019 23:52:12 UTC] PHP Fatal error:  Uncaught Error: Access to undeclared static property: Turno::$_turnos in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php:31
+[21-Apr-2020 01:21:48 UTC] PHP Fatal error:  Uncaught App\Core\Exceptions\RouteNotFoundException: No route defined for this URI. in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php:70
 Stack trace:
-#0 C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\turno.php(68): Turno::getAll()
+#0 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\index.php(19): App\Core\Router->direct('not_found', 'GET')
 #1 {main}
-  thrown in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 31
-[16-Dec-2019 23:52:30 UTC] PHP Fatal error:  Uncaught Error: Access to undeclared static property: Turno::$_turnos in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php:31
+  thrown in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php on line 70
+[21-Apr-2020 01:21:52 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\App\Core\Controller\Controller' not found in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php:4
 Stack trace:
-#0 C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\turno.php(68): Turno::getAll()
+#0 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\vendor\composer\ClassLoader.php(444): include()
+#1 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\Users\\Nehuen...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers...')
+#3 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(82): spl_autoload_call('App\\Controllers...')
+#4 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(66): App\Core\Router->callAction('App\\Controllers...', 'index')
+#5 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\index.php(15): App\Core\Router->direct('', 'GET')
+#6 {main}
+  thrown in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 4
+[21-Apr-2020 01:22:05 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\App\Core\Controller' not found in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php:4
+Stack trace:
+#0 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\vendor\composer\ClassLoader.php(444): include()
+#1 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\Users\\Nehuen...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers...')
+#3 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(82): spl_autoload_call('App\\Controllers...')
+#4 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(66): App\Core\Router->callAction('App\\Controllers...', 'index')
+#5 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\index.php(15): App\Core\Router->direct('', 'GET')
+#6 {main}
+  thrown in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 4
+[21-Apr-2020 01:22:52 UTC] PHP Fatal error:  Uncaught Error: Undefined constant 'App\Controllers' in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php:2
+Stack trace:
+#0 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\vendor\composer\ClassLoader.php(444): include()
+#1 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\Users\\Nehuen...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers...')
+#3 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(82): spl_autoload_call('App\\Controllers...')
+#4 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(66): App\Core\Router->callAction('App\\Controllers...', 'index')
+#5 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\index.php(15): App\Core\Router->direct('', 'GET')
+#6 {main}
+  thrown in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 2
+[21-Apr-2020 01:23:08 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\App\Models\Turnos\Turnos' not found in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php:7
+Stack trace:
+#0 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(82): App\Controllers\Turnos->__construct()
+#1 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(66): App\Core\Router->callAction('App\\Controllers...', 'index')
+#2 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\index.php(15): App\Core\Router->direct('', 'GET')
+#3 {main}
+  thrown in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 7
+[21-Apr-2020 01:23:31 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Controllers\App\Models\Turnos' not found in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php:7
+Stack trace:
+#0 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(82): App\Controllers\Turnos->__construct()
+#1 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(66): App\Core\Router->callAction('App\\Controllers...', 'index')
+#2 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\index.php(15): App\Core\Router->direct('', 'GET')
+#3 {main}
+  thrown in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 7
+[21-Apr-2020 01:24:01 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Models\Turnos' not found in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php:7
+Stack trace:
+#0 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(82): App\Controllers\Turnos->__construct()
+#1 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(66): App\Core\Router->callAction('App\\Controllers...', 'index')
+#2 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\index.php(15): App\Core\Router->direct('', 'GET')
+#3 {main}
+  thrown in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 7
+[21-Apr-2020 01:24:18 UTC] PHP Fatal error:  Uncaught App\Core\Exceptions\RouteNotFoundException: No route defined for this URI. in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php:70
+Stack trace:
+#0 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\index.php(23): App\Core\Router->direct('internal_error', 'GET')
 #1 {main}
-  thrown in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 31
-[16-Dec-2019 23:58:12 UTC] PHP Notice:  Undefined offset: 0 in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\shared\dbal.php on line 1237
-[17-Dec-2019 00:02:48 UTC] PHP Notice:  Undefined property: Turno::$props in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 33
-[17-Dec-2019 00:02:48 UTC] PHP Notice:  Undefined property: Turno::$props in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 37
-[17-Dec-2019 00:08:30 UTC] PHP Notice:  Trying to get property 'horario' of non-object in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 37
-[17-Dec-2019 00:08:30 UTC] PHP Warning:  Attempt to assign property 'horario' of non-object in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 37
-[17-Dec-2019 00:45:42 UTC] PHP Notice:  Undefined index: image in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 111
-[17-Dec-2019 00:45:42 UTC] PHP Notice:  Undefined index: image in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 111
-[17-Dec-2019 00:45:42 UTC] PHP Notice:  Undefined index: image in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 111
-[17-Dec-2019 00:45:42 UTC] PHP Notice:  Undefined index: image in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 111
-[17-Dec-2019 00:45:42 UTC] PHP Notice:  Undefined index: image in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 111
-[17-Dec-2019 00:45:42 UTC] PHP Notice:  Undefined index: image in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\model\turno.php on line 111
-[17-Dec-2019 00:46:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Turno::flush() in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\turno.php:95
+  thrown in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php on line 70
+[21-Apr-2020 01:34:46 UTC] PHP Notice:  compact(): Undefined variable: Internal error in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Project.php on line 20
+[21-Apr-2020 02:27:33 UTC] PHP Fatal error:  Uncaught Error: Object of class App\Controllers\Turnos could not be converted to string in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php:86
 Stack trace:
-#0 {main}
-  thrown in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\turno.php on line 95
-[21-Jan-2020 02:07:03 UTC] PHP Fatal error:  Cannot 'break' 2 levels in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\etc\apps\phpMyAdmin\export.php on line 854
-[21-Jan-2020 02:07:30 UTC] PHP Fatal error:  Cannot 'break' 2 levels in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\etc\apps\phpMyAdmin\export.php on line 854
-[21-Jan-2020 02:10:16 UTC] PHP Fatal error:  Cannot 'break' 2 levels in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\etc\apps\phpMyAdmin\export.php on line 854
-[21-Jan-2020 02:41:47 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function TurnoController::getAll(), 0 passed in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\turno.php on line 64 and exactly 1 expected in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\controller\turno.php:76
+#0 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(66): App\Core\Router->callAction(Object(App\Controllers\Turnos), 'guardar')
+#1 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\index.php(15): App\Core\Router->direct('turnos/guardar', 'POST')
+#2 {main}
+  thrown in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php on line 86
+[21-Apr-2020 02:45:00 UTC] PHP Fatal error:  Constant expression contains invalid operations in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 6
+[21-Apr-2020 02:45:54 UTC] PHP Notice:  Undefined variable: turno in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 44
+[21-Apr-2020 02:45:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function export() on null in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php:44
 Stack trace:
-#0 C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\turno.php(64): TurnoController->getAll()
-#1 {main}
-  thrown in C:\Users\Nehuen\Desktop\paw\paw-123105\TP4\www\controller\turno.php on line 76
+#0 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(90): App\Controllers\Turnos->guardar()
+#1 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(66): App\Core\Router->callAction(Object(App\Controllers\Turnos), 'guardar')
+#2 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\index.php(15): App\Core\Router->direct('turnos/guardar', 'POST')
+#3 {main}
+  thrown in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 44
+[21-Apr-2020 02:46:18 UTC] PHP Notice:  Undefined index: pelo in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\models\Turnos.php on line 85
+[21-Apr-2020 02:47:47 UTC] PHP Notice:  Undefined index: pelo in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\models\Turnos.php on line 85
+[21-Apr-2020 02:49:07 UTC] PHP Notice:  Undefined index: pelo in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\models\Turnos.php on line 90
+[21-Apr-2020 02:49:55 UTC] PHP Notice:  Undefined index: pelo in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\models\Turnos.php on line 90
+[21-Apr-2020 03:30:05 UTC] PHP Notice:  Undefined index: pelo in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\models\Turnos.php on line 90
+[21-Apr-2020 03:33:37 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Models\DateTime' not found in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\models\Turnos.php:43
+Stack trace:
+#0 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php(57): App\Models\Turnos->validate()
+#1 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(90): App\Controllers\Turnos->guardar()
+#2 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(66): App\Core\Router->callAction(Object(App\Controllers\Turnos), 'guardar')
+#3 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\index.php(15): App\Core\Router->direct('turnos/guardar', 'POST')
+#4 {main}
+  thrown in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\models\Turnos.php on line 43
+[21-Apr-2020 03:33:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\Core\Database\QueryBuilder::guardar() in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\models\Turnos.php:65
+Stack trace:
+#0 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php(67): App\Models\Turnos->guardar()
+#1 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(90): App\Controllers\Turnos->guardar()
+#2 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(66): App\Core\Router->callAction(Object(App\Controllers\Turnos), 'guardar')
+#3 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\index.php(15): App\Core\Router->direct('turnos/guardar', 'POST')
+#4 {main}
+  thrown in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\models\Turnos.php on line 65
+[21-Apr-2020 03:34:13 UTC] PHP Notice:  Undefined variable: turno in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 77
+[21-Apr-2020 03:34:13 UTC] PHP Fatal error:  Uncaught Error: Call to a member function export() on null in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php:77
+Stack trace:
+#0 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(90): App\Controllers\Turnos->guardar()
+#1 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(66): App\Core\Router->callAction(Object(App\Controllers\Turnos), 'guardar')
+#2 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\index.php(15): App\Core\Router->direct('turnos/guardar', 'POST')
+#3 {main}
+  thrown in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 77
+[23-Apr-2020 01:06:49 UTC] PHP Notice:  Undefined index: pelo in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\models\Turnos.php on line 90
+[23-Apr-2020 01:08:31 UTC] PHP Warning:  move_uploaded_file(images/.jpg): failed to open stream: No such file or directory in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 74
+[23-Apr-2020 01:08:31 UTC] PHP Warning:  move_uploaded_file(): Unable to move 'C:\Users\Nehuen\AppData\Local\Temp\php825A.tmp' to 'images/.jpg' in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 74
+[23-Apr-2020 01:11:38 UTC] PHP Warning:  move_uploaded_file(images/.jpg): failed to open stream: No such file or directory in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 75
+[23-Apr-2020 01:11:38 UTC] PHP Warning:  move_uploaded_file(): Unable to move 'C:\Users\Nehuen\AppData\Local\Temp\php5B6A.tmp' to 'images/.jpg' in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 75
+[23-Apr-2020 01:11:52 UTC] PHP Warning:  move_uploaded_file(images/.jpg): failed to open stream: No such file or directory in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 75
+[23-Apr-2020 01:11:52 UTC] PHP Warning:  move_uploaded_file(): Unable to move 'C:\Users\Nehuen\AppData\Local\Temp\php9316.tmp' to 'images/.jpg' in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 75
+[23-Apr-2020 01:13:10 UTC] PHP Warning:  move_uploaded_file(images/1.jpg): failed to open stream: No such file or directory in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 75
+[23-Apr-2020 01:13:10 UTC] PHP Warning:  move_uploaded_file(): Unable to move 'C:\Users\Nehuen\AppData\Local\Temp\phpC5C8.tmp' to 'images/1.jpg' in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 75
+[23-Apr-2020 01:31:14 UTC] PHP Notice:  Undefined variable: turno in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 26
+[23-Apr-2020 01:31:14 UTC] PHP Fatal error:  Uncaught Error: Call to a member function export() on null in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php:26
+Stack trace:
+#0 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(90): App\Controllers\Turnos->ver()
+#1 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(66): App\Core\Router->callAction(Object(App\Controllers\Turnos), 'ver')
+#2 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\index.php(15): App\Core\Router->direct('turnos/ver', 'GET')
+#3 {main}
+  thrown in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 26
+[23-Apr-2020 01:31:39 UTC] PHP Fatal error:  Uncaught Error: Access to undeclared static property: App\Controllers\Turnos::$_pelos in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php:32
+Stack trace:
+#0 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(90): App\Controllers\Turnos->ver()
+#1 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(66): App\Core\Router->callAction(Object(App\Controllers\Turnos), 'ver')
+#2 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\index.php(15): App\Core\Router->direct('turnos/ver', 'GET')
+#3 {main}
+  thrown in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 32
+[23-Apr-2020 01:34:28 UTC] PHP Fatal error:  Uncaught Error: Object of class App\Controllers\Turnos could not be converted to string in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php:86
+Stack trace:
+#0 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(66): App\Core\Router->callAction(Object(App\Controllers\Turnos), 'editar')
+#1 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\index.php(15): App\Core\Router->direct('turnos/editar', 'GET')
+#2 {main}
+  thrown in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php on line 86
+[23-Apr-2020 01:38:21 UTC] PHP Notice:  Array to string conversion in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\views\cache\87\87938e8f164d0bece8cd877d2a6090c8eb9c0aafa5f94995e5ab0dd79fb77f89.php on line 93
+[23-Apr-2020 01:40:10 UTC] PHP Notice:  Array to string conversion in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\views\cache\87\87938e8f164d0bece8cd877d2a6090c8eb9c0aafa5f94995e5ab0dd79fb77f89.php on line 93
+[23-Apr-2020 01:41:35 UTC] PHP Notice:  Array to string conversion in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\views\cache\87\87938e8f164d0bece8cd877d2a6090c8eb9c0aafa5f94995e5ab0dd79fb77f89.php on line 93
+[23-Apr-2020 01:43:08 UTC] PHP Notice:  Undefined index: name in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 89
+[23-Apr-2020 01:57:42 UTC] PHP Notice:  Undefined index: id in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 49
+[23-Apr-2020 02:32:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function App\Controllers\convert_to_bytes() in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php:67
+Stack trace:
+#0 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(90): App\Controllers\Turnos->guardar()
+#1 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(66): App\Core\Router->callAction(Object(App\Controllers\Turnos), 'guardar')
+#2 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\index.php(15): App\Core\Router->direct('turnos/guardar', 'POST')
+#3 {main}
+  thrown in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 67
+[23-Apr-2020 02:33:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function convert_to_bytes() in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php:67
+Stack trace:
+#0 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(90): App\Controllers\Turnos->guardar()
+#1 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(66): App\Core\Router->callAction(Object(App\Controllers\Turnos), 'guardar')
+#2 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\index.php(15): App\Core\Router->direct('turnos/guardar', 'POST')
+#3 {main}
+  thrown in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 67
+[23-Apr-2020 02:34:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function App\Controllers\convert_to_bytes() in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php:82
+Stack trace:
+#0 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(90): App\Controllers\Turnos->guardar()
+#1 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(66): App\Core\Router->callAction(Object(App\Controllers\Turnos), 'guardar')
+#2 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\index.php(15): App\Core\Router->direct('turnos/guardar', 'POST')
+#3 {main}
+  thrown in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 82
+[23-Apr-2020 02:34:52 UTC] PHP Notice:  A non well formed numeric value encountered in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 13
+[23-Apr-2020 02:34:53 UTC] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 214515688 bytes) in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 97
+[23-Apr-2020 02:36:16 UTC] PHP Notice:  A non well formed numeric value encountered in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 10
+[23-Apr-2020 02:36:16 UTC] PHP Notice:  Trying to access array offset on value of type int in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 11
+[23-Apr-2020 02:36:31 UTC] PHP Warning:  POST Content-Length of 160887968 bytes exceeds the limit of 10485760 bytes in Unknown on line 0
+[23-Apr-2020 02:36:31 UTC] PHP Notice:  Undefined index: id in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 80
+[23-Apr-2020 02:36:31 UTC] PHP Notice:  A non well formed numeric value encountered in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 10
+[23-Apr-2020 02:36:31 UTC] PHP Notice:  Trying to access array offset on value of type int in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 11
+[23-Apr-2020 02:37:09 UTC] PHP Warning:  POST Content-Length of 160887968 bytes exceeds the limit of 10485760 bytes in Unknown on line 0
+[23-Apr-2020 02:37:09 UTC] PHP Notice:  Undefined index: id in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 80
+[23-Apr-2020 02:37:09 UTC] PHP Notice:  A non well formed numeric value encountered in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 10
+[23-Apr-2020 02:37:09 UTC] PHP Notice:  Trying to access array offset on value of type int in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 11
+[23-Apr-2020 02:37:30 UTC] PHP Warning:  POST Content-Length of 160887968 bytes exceeds the limit of 10485760 bytes in Unknown on line 0
+[23-Apr-2020 02:37:30 UTC] PHP Notice:  Undefined index: id in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 80
+[23-Apr-2020 02:37:30 UTC] PHP Notice:  A non well formed numeric value encountered in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 11
+[23-Apr-2020 02:37:42 UTC] PHP Warning:  POST Content-Length of 160887968 bytes exceeds the limit of 10485760 bytes in Unknown on line 0
+[23-Apr-2020 02:37:42 UTC] PHP Notice:  Undefined index: id in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 79
+[23-Apr-2020 02:37:42 UTC] PHP Notice:  A non well formed numeric value encountered in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 10
+[23-Apr-2020 02:39:16 UTC] PHP Warning:  POST Content-Length of 160887968 bytes exceeds the limit of 10485760 bytes in Unknown on line 0
+[23-Apr-2020 02:39:16 UTC] PHP Notice:  Undefined index: id in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 79
+[23-Apr-2020 02:39:16 UTC] PHP Warning:  explode(): Empty delimiter in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 9
+[23-Apr-2020 02:39:16 UTC] PHP Warning:  array_pop() expects parameter 1 to be array, bool given in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 10
+[23-Apr-2020 02:39:16 UTC] PHP Warning:  implode(): Invalid arguments passed in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 11
+[23-Apr-2020 02:40:25 UTC] PHP Warning:  POST Content-Length of 160887968 bytes exceeds the limit of 10485760 bytes in Unknown on line 0
+[23-Apr-2020 02:40:25 UTC] PHP Parse error:  syntax error, unexpected ',', expecting ')' in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 10
+[23-Apr-2020 02:40:36 UTC] PHP Warning:  POST Content-Length of 160887968 bytes exceeds the limit of 10485760 bytes in Unknown on line 0
+[23-Apr-2020 02:40:36 UTC] PHP Notice:  Undefined index: id in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 78
+[23-Apr-2020 02:41:21 UTC] PHP Warning:  POST Content-Length of 160887968 bytes exceeds the limit of 10485760 bytes in Unknown on line 0
+[23-Apr-2020 02:45:11 UTC] PHP Warning:  POST Content-Length of 160887968 bytes exceeds the limit of 10485760 bytes in Unknown on line 0
+[23-Apr-2020 02:45:27 UTC] PHP Warning:  POST Content-Length of 160887968 bytes exceeds the limit of 10485760 bytes in Unknown on line 0
+[23-Apr-2020 02:50:42 UTC] PHP Warning:  unlink(public/images/5): No such file or directory in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 97
+[23-Apr-2020 03:03:59 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Models\Turnos::validate(), 0 passed in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 54 and exactly 1 expected in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\models\Turnos.php:30
+Stack trace:
+#0 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php(54): App\Models\Turnos->validate()
+#1 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(90): App\Controllers\Turnos->editar()
+#2 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\core\Router.php(66): App\Core\Router->callAction(Object(App\Controllers\Turnos), 'editar')
+#3 C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\index.php(15): App\Core\Router->direct('turnos/editar', 'GET')
+#4 {main}
+  thrown in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\models\Turnos.php on line 30
+[23-Apr-2020 03:04:57 UTC] PHP Warning:  unlink(public/images/6data:image/jpg;base64,/9j/4R10RXhpZgAATU0AKgAAAAgADAEAAAMAAAABA/wAAAEBAAMAAAABA/wAAAECAAMAAAADAAAAngEGAAMAAAABAAIAAAESAAMAAAABAAEAAAEVAAMAAAABAAMAAAEaAAUAAAABAAAApAEbAAUAAAABAAAArAEoAAMAAAABAAIAAAExAAIAAAAiAAAAtAEyAAIAAAAUAAAA1odpAAQAAAABAAAA7AAAASQACAAIAAgACvyAAAAnEAAK/IAAACcQQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpADIwMjA6MDM6MTcgMTU6Mjc6MTcAAAAABJAAAAcAAAAEMDIyMaABAAMAAAAB//8AAKACAAQAAAABAAAD+6ADAAQAAAABAAAD+wAAAAAAAAAGAQMAAwAAAAEABgAAARoABQAAAAEAAAFyARsABQAAAAEAAAF6ASgAAwAAAAEAAgAAAgEABAAAAAEAAAGCAgIABAAAAAEAABvqAAAAAAAAAEgAAAABAAAASAAAAAH/2P/tAAxBZG9iZV9DTQAC/+4ADkFkb2JlAGSAAAAAAf/bAIQADAgICAkIDAkJDBELCgsRFQ8MDA8VGBMTFRMTGBEMDAwMDAwRDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAENCwsNDg0QDg4QFA4ODhQUDg4ODhQRDAwMDAwREQwMDAwMDBEMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM/8AAEQgAoACgAwEiAAIRAQMRAf/dAAQACv/EAT8AAAEFAQEBAQEBAAAAAAAAAAMAAQIEBQYHCAkKCwEAAQUBAQEBAQEAAAAAAAAAAQACAwQFBgcICQoLEAABBAEDAgQCBQcGCAUDDDMBAAIRAwQhEjEFQVFhEyJxgTIGFJGhsUIjJBVSwWIzNHKC0UMHJZJT8OHxY3M1FqKygyZEk1RkRcKjdDYX0lXiZfKz in C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\www\app\controllers\Turnos.php on line 66

@@ -1,0 +1,114 @@
+html {
+    background-color: #fafafa;
+}
+
+body {
+    max-width: 80em;
+    margin: 2em auto;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
+    background: radial-gradient(#fff,#fdfdfd);
+    padding: 1em;
+    box-sizing: border-box;
+    font-family: "Principal";
+    font-size: 12pt;
+}
+
+body > header {
+    border-bottom: .1em solid #eee;
+    padding-bottom: 1.25em;
+    margin-bottom: 1.25em;
+}
+
+button, [type="button"], [type="reset"], [type="submit"], a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .5em 1.5em;
+    margin: .25em;
+    line-height: 1.5em;
+    color: #fff;
+    background-color: rgb(0, 110, 199);
+    font-size: 1.2em;
+    display: block;
+    height: auto;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #eee;
+}
+
+body > header > header {
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+body > header > header nav {
+}
+
+body > header > header nav ul {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1em 0;
+}
+
+[type="submit"], body > header > header nav ul li:first-child a {
+    background-color: rgb(0, 150, 69);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-color: #fafafa;
+}
+
+table tr:nth-child(even) {
+}
+
+table th, table td {
+    padding: .5em;
+    line-height: 1.2em;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form > div:last-child {
+    width: 100%;
+    flex-basis: 100%;
+    background-color: #fafafa;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0 0 0;
+    flex-direction: row;
+}
+
+form > div {
+    padding: 1em;
+    min-width: 30%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    color: rgb(0, 110, 199);
+    display: block;
+    margin-bottom: .5em;
+}
+
+form input, form select {
+    line-height: 2em;
+    height: 2em;
+    padding: 0 .5em;
+    border: none;
+    border-bottom: 2px solid #eee;
+}

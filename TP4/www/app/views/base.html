@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% block head %}
+		<meta charset="utf-8">
+		<title>{% block title %}{% endblock %}</title>
+		<link rel="stylesheet" href="/public/css/_.css">
+		<link rel="stylesheet" href="/public/css/fonts.css">
+		<link rel="stylesheet" href="/public/css/style.css">
+		{% endblock %}
+	</head>
+	<body>
+		<header>{% block header %}{% endblock %}</header>
+		<main>{% block main %}{% endblock %}</main>
+		<footer>{% block footer %}{% endblock %}</footer>
+	</body>
+</html>

@@ -28,23 +28,94 @@ InnoDB: Foreign key constraint system tables created
 191216 17:41:30  InnoDB: Initializing buffer pool, size = 8.0M
 191216 17:41:30  InnoDB: Completed initialization of buffer pool
 191216 17:41:30  InnoDB: Started; log sequence number 0 44233
-191216 20:22:40 [Note] Plugin 'FEDERATED' is disabled.
-191216 20:22:40  InnoDB: Initializing buffer pool, size = 8.0M
-191216 20:22:41  InnoDB: Completed initialization of buffer pool
-191216 20:22:41  InnoDB: Started; log sequence number 0 44233
-191216 20:26:32 [Note] Plugin 'FEDERATED' is disabled.
-191216 20:26:32  InnoDB: Initializing buffer pool, size = 8.0M
-191216 20:26:32  InnoDB: Completed initialization of buffer pool
-191216 20:26:32  InnoDB: Started; log sequence number 0 44233
-191216 20:28:13 [Note] Plugin 'FEDERATED' is disabled.
-191216 20:28:13  InnoDB: Initializing buffer pool, size = 8.0M
-191216 20:28:13  InnoDB: Completed initialization of buffer pool
-191216 20:28:13  InnoDB: Started; log sequence number 0 44233
-191216 20:30:38 [Note] Plugin 'FEDERATED' is disabled.
-191216 20:30:38  InnoDB: Initializing buffer pool, size = 8.0M
-191216 20:30:38  InnoDB: Completed initialization of buffer pool
-191216 20:30:38  InnoDB: Started; log sequence number 0 44233
-200120 22:50:45 [Note] Plugin 'FEDERATED' is disabled.
-200120 22:50:45  InnoDB: Initializing buffer pool, size = 8.0M
-200120 22:50:45  InnoDB: Completed initialization of buffer pool
-200120 22:50:45  InnoDB: Started; log sequence number 0 44243
+200402 21:24:16 [Note] Plugin 'FEDERATED' is disabled.
+200402 21:24:16  InnoDB: Initializing buffer pool, size = 8.0M
+200402 21:24:16  InnoDB: Completed initialization of buffer pool
+200402 21:24:16  InnoDB: Started; log sequence number 0 44233
+200409  3:18:33 [Note] Plugin 'FEDERATED' is disabled.
+200409  3:18:33  InnoDB: Initializing buffer pool, size = 8.0M
+200409  3:18:33  InnoDB: Completed initialization of buffer pool
+200409  3:18:33  InnoDB: Started; log sequence number 0 44233
+200420 20:32:14 [Note] Plugin 'FEDERATED' is disabled.
+200420 20:32:15  InnoDB: Initializing buffer pool, size = 8.0M
+200420 20:32:15  InnoDB: Completed initialization of buffer pool
+200420 20:32:15  InnoDB: Started; log sequence number 0 44233
+200420 20:38:45 [Note] Plugin 'FEDERATED' is disabled.
+200420 20:38:45  InnoDB: Initializing buffer pool, size = 8.0M
+200420 20:38:45  InnoDB: Completed initialization of buffer pool
+200420 20:38:45  InnoDB: Started; log sequence number 0 44233
+200420 20:47:44 [Note] Plugin 'FEDERATED' is disabled.
+200420 20:47:44  InnoDB: Initializing buffer pool, size = 8.0M
+200420 20:47:44  InnoDB: Completed initialization of buffer pool
+200420 20:47:44  InnoDB: Started; log sequence number 0 44233
+200420 20:50:27 [Note] Plugin 'FEDERATED' is disabled.
+200420 20:50:27  InnoDB: Initializing buffer pool, size = 8.0M
+200420 20:50:27  InnoDB: Completed initialization of buffer pool
+200420 20:50:27  InnoDB: Started; log sequence number 0 44233
+200420 20:50:54 [Note] Plugin 'FEDERATED' is disabled.
+200420 20:50:54  InnoDB: Initializing buffer pool, size = 8.0M
+200420 20:50:54  InnoDB: Completed initialization of buffer pool
+200420 20:50:54  InnoDB: Started; log sequence number 0 44233
+200420 20:51:25 [Note] Plugin 'FEDERATED' is disabled.
+200420 20:51:25  InnoDB: Initializing buffer pool, size = 8.0M
+200420 20:51:25  InnoDB: Completed initialization of buffer pool
+200420 20:51:25  InnoDB: Started; log sequence number 0 44233
+200420 21:01:24 [Note] Plugin 'FEDERATED' is disabled.
+200420 21:01:24  InnoDB: Initializing buffer pool, size = 8.0M
+200420 21:01:24  InnoDB: Completed initialization of buffer pool
+200420 21:01:24  InnoDB: Started; log sequence number 0 44233
+200420 21:02:26 [Note] Plugin 'FEDERATED' is disabled.
+200420 21:02:26  InnoDB: Initializing buffer pool, size = 8.0M
+200420 21:02:26  InnoDB: Completed initialization of buffer pool
+200420 21:02:26  InnoDB: Started; log sequence number 0 44233
+200420 21:02:53 [Note] Plugin 'FEDERATED' is disabled.
+200420 21:02:53  InnoDB: Initializing buffer pool, size = 8.0M
+200420 21:02:53  InnoDB: Completed initialization of buffer pool
+200420 21:02:53  InnoDB: Started; log sequence number 0 44233
+200420 21:05:46 [Note] Plugin 'FEDERATED' is disabled.
+200420 21:05:46  InnoDB: Initializing buffer pool, size = 8.0M
+200420 21:05:46  InnoDB: Completed initialization of buffer pool
+200420 21:05:46  InnoDB: Started; log sequence number 0 44233
+200421  0:36:47 [Note] Plugin 'FEDERATED' is disabled.
+200421  0:36:47  InnoDB: Initializing buffer pool, size = 8.0M
+200421  0:36:47  InnoDB: Completed initialization of buffer pool
+200421  0:36:47  InnoDB: Started; log sequence number 0 44233
+200422 22:03:11 [Note] Plugin 'FEDERATED' is disabled.
+200422 22:03:11  InnoDB: Initializing buffer pool, size = 8.0M
+200422 22:03:11  InnoDB: Completed initialization of buffer pool
+200422 22:03:11  InnoDB: Started; log sequence number 0 44233
+200422 22:29:39 [Note] Plugin 'FEDERATED' is disabled.
+200422 22:29:40  InnoDB: Initializing buffer pool, size = 8.0M
+200422 22:29:40  InnoDB: Completed initialization of buffer pool
+200422 22:29:40  InnoDB: Started; log sequence number 0 44233
+200422 23:36:27 [Note] Plugin 'FEDERATED' is disabled.
+200422 23:36:27  InnoDB: Initializing buffer pool, size = 8.0M
+200422 23:36:27  InnoDB: Completed initialization of buffer pool
+200422 23:36:27  InnoDB: Started; log sequence number 0 44233
+200430  0:37:39 [Note] Plugin 'FEDERATED' is disabled.
+200430  0:37:39  InnoDB: Initializing buffer pool, size = 8.0M
+200430  0:37:39  InnoDB: Completed initialization of buffer pool
+200430  0:37:39  InnoDB: Started; log sequence number 0 44233
+200519 12:45:18 [Note] Plugin 'FEDERATED' is disabled.
+200519 12:45:18  InnoDB: Initializing buffer pool, size = 8.0M
+200519 12:45:18  InnoDB: Completed initialization of buffer pool
+200519 12:45:18  InnoDB: Started; log sequence number 0 44233
+200519 12:46:05 [Note] Plugin 'FEDERATED' is disabled.
+200519 12:46:05  InnoDB: Initializing buffer pool, size = 8.0M
+200519 12:46:05  InnoDB: Completed initialization of buffer pool
+200519 12:46:06  InnoDB: Started; log sequence number 0 44233
+200519 12:48:24 [Note] Plugin 'FEDERATED' is disabled.
+200519 12:48:24  InnoDB: Initializing buffer pool, size = 8.0M
+200519 12:48:24  InnoDB: Completed initialization of buffer pool
+200519 12:48:24  InnoDB: Started; log sequence number 0 44233
+200519 12:48:43 [Note] Plugin 'FEDERATED' is disabled.
+200519 12:48:43  InnoDB: Initializing buffer pool, size = 8.0M
+200519 12:48:43  InnoDB: Completed initialization of buffer pool
+200519 12:48:43  InnoDB: Operating system error number 32 in a file operation.
+InnoDB: The error means that another program is using InnoDB's files.
+InnoDB: This might be a backup or antivirus software or another instance
+InnoDB: of MySQL. Please close it to get rid of this error.
+200519 12:48:57 [Note] Plugin 'FEDERATED' is disabled.
+200519 12:48:57  InnoDB: Initializing buffer pool, size = 8.0M
+200519 12:48:57  InnoDB: Completed initialization of buffer pool
+200519 12:48:57  InnoDB: Started; log sequence number 0 44233

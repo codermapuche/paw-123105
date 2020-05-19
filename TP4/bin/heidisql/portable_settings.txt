@@ -4,10 +4,10 @@ ColPositions_connform.ListSessions<|||>1<|||>0,1,2,3,4,5,6
 ColSort_connform.ListSessions<|||>1<|||>0,0
 CoolBand0Index<|||>3<|||>0
 CoolBand0Break<|||>3<|||>1
-CoolBand0Width<|||>3<|||>928
+CoolBand0Width<|||>3<|||>1914
 CoolBand1Index<|||>3<|||>1
 CoolBand1Break<|||>3<|||>1
-CoolBand1Width<|||>3<|||>928
+CoolBand1Width<|||>3<|||>1914
 MainWinOnMonitor<|||>3<|||>0
 MainWinTop<|||>3<|||>22
 ColWidths_MainForm.ListDatabases<|||>1<|||>150,80,50,50,50,50,50,50,50,50,120
@@ -34,21 +34,25 @@ ColWidths_MainForm.ListTables<|||>1<|||>120,70,70,120,120,70,100,50,70,70,70,70,
 ColsVisible_MainForm.ListTables<|||>1<|||>0,1,2,3,4,5,6,18
 ColPositions_MainForm.ListTables<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18
 ColSort_MainForm.ListTables<|||>1<|||>0,0
-LastSessions<|||>1<|||>
+LastSessions<|||>1<|||>Laragon
 LastActiveSession<|||>1<|||>Laragon
-ColWidths_frmTableEditor.listColumns<|||>1<|||>44,100,156,90,60,65,50,119,130,140,100,100
+ColWidths_frmTableEditor.listColumns<|||>1<|||>44,100,156,189,60,111,141,119,130,140,100,100
 ColsVisible_frmTableEditor.listColumns<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10,11
 ColPositions_frmTableEditor.listColumns<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10,11
 ColSort_frmTableEditor.listColumns<|||>1<|||>-1,0
-ColWidths_frmTableEditor.treeIndexes<|||>1<|||>341,100,80
+ColWidths_frmTableEditor.treeIndexes<|||>1<|||>10,612,80
 ColsVisible_frmTableEditor.treeIndexes<|||>1<|||>0,1,2
 ColPositions_frmTableEditor.treeIndexes<|||>1<|||>0,1,2
 ColSort_frmTableEditor.treeIndexes<|||>1<|||>-1,0
-ColWidths_frmTableEditor.listForeignKeys<|||>1<|||>99,80,100,80,80,80
+ColWidths_frmTableEditor.listForeignKeys<|||>1<|||>96,80,100,80,80,80
 ColsVisible_frmTableEditor.listForeignKeys<|||>1<|||>0,1,2,3,4,5
 ColPositions_frmTableEditor.listForeignKeys<|||>1<|||>0,1,2,3,4,5
 ColSort_frmTableEditor.listForeignKeys<|||>1<|||>-1,0
 MainWinLeft<|||>3<|||>89
+MainWinMaximized<|||>3<|||>1
+ExportSQL_Filenames<|||>1<|||>C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP3\bd.sql<{{{><}}}>
+ExportSQL_CreateDatabases<|||>3<|||>1
+ExportSQL_CreateTables<|||>3<|||>1
 Servers\Laragon\SessionCreated<|||>1<|||>2017-02-14 13:41:54
 Servers\Laragon\Host<|||>1<|||>localhost
 Servers\Laragon\WindowsAuth<|||>3<|||>0
@@ -77,9 +81,9 @@ Servers\Laragon\SSL_Key<|||>1<|||>
 Servers\Laragon\SSL_Cert<|||>1<|||>
 Servers\Laragon\SSL_CA<|||>1<|||>
 Servers\Laragon\SSL_Cipher<|||>1<|||>
-Servers\Laragon\RefusedCount<|||>3<|||>6
-Servers\Laragon\ServerVersionFull<|||>1<|||>5.7.17 - MySQL Community Server (GPL)
-Servers\Laragon\ConnectCount<|||>3<|||>3
-Servers\Laragon\ServerVersion<|||>3<|||>50717
-Servers\Laragon\LastConnect<|||>1<|||>2017-06-25 11:11:16
-Servers\Laragon\lastUsedDB<|||>1<|||>
+Servers\Laragon\RefusedCount<|||>3<|||>4
+Servers\Laragon\ServerVersionFull<|||>1<|||>5.1.72-community - MySQL Community Server (GPL)
+Servers\Laragon\ConnectCount<|||>3<|||>7
+Servers\Laragon\ServerVersion<|||>3<|||>50172
+Servers\Laragon\LastConnect<|||>1<|||>2020-04-30 00:37:51
+Servers\Laragon\lastUsedDB<|||>1<|||>turnero

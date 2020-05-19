@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block header %}
+	{{ include('partials/header.html') }}
+{% endblock %}
+
+{% block main %}
+<h1>Turno #{{ id }}</h1>
+
+<ul>
+	<li>Nombre<br>{{ nombre }}</li>
+	<li>Email<br>{{ email }}</li>
+	<li>Telefono<br>{{ telefono }}</li>
+	<li>Fecha de nacimiento<br>{{ nacimiento }}</li>
+	<li>Calzado<br>{{ calzado }}</li>
+	<li>Altura<br>{{ altura }}</li>
+	<li>Pelo<br>{{ _pelo }}</li>
+	<li>Fecha de turno<br>{{ turno }}</li>
+	<li>Hora de turno<br>{{ horario }}</li>
+	<li>Diagnostico<br>
+	<img src="{{ diagnostico }}"></li>
+</ul>
+{% endblock %}

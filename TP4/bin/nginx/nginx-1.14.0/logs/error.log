@@ -1,11 +1,16 @@
-2019/12/16 16:09:59 [notice] 4780#6648: signal process started
-2019/12/16 16:09:59 [emerg] 3048#11208: bind() to 0.0.0.0:80 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
-2019/12/16 16:10:00 [notice] 7360#11196: signal process started
-2019/12/16 16:10:00 [emerg] 3048#11208: bind() to 0.0.0.0:80 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)
-2019/12/16 17:39:38 [notice] 2916#8528: signal process started
-2019/12/16 17:40:44 [notice] 884#1512: signal process started
-2019/12/16 17:40:56 [notice] 5928#5936: signal process started
-2019/12/16 20:26:21 [notice] 8828#1400: signal process started
-2019/12/16 20:27:43 [notice] 9868#10804: signal process started
-2019/12/16 20:29:44 [notice] 10996#892: signal process started
-2019/12/16 21:53:34 [notice] 10612#5756: signal process started
+2020/04/21 00:36:44 [notice] 204276#204284: signal process started
+2020/04/21 00:36:52 [notice] 41592#192980: signal process started
+2020/04/21 00:36:52 [error] 41592#192980: OpenEvent("Global\ngx_stop_203348") failed (2: The system cannot find the file specified)
+2020/04/22 22:29:37 [notice] 7764#9344: signal process started
+2020/04/22 22:29:41 [notice] 8044#9584: signal process started
+2020/04/22 23:36:26 [notice] 6800#1360: signal process started
+2020/04/23 00:57:23 [notice] 5348#6180: signal process started
+2020/04/30 00:39:45 [notice] 14532#14968: signal process started
+2020/05/19 12:45:49 [notice] 8324#8724: signal process started
+2020/05/19 12:48:22 [notice] 2612#1432: signal process started
+2020/05/19 12:48:50 [notice] 16108#14112: signal process started
+2020/05/19 12:48:52 [notice] 8432#11952: signal process started
+2020/05/19 12:48:52 [error] 8432#11952: CreateFile() "C:\Users\Nehuen\Desktop\UNLu\paw-123105\TP4\bin\nginx\nginx-1.14.0/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2020/05/19 12:59:30 [error] 12384#6912: *66 access forbidden by rule, client: 185.234.219.133, server: localhost, request: "GET / HTTP/1.1", host: "181.230.35.6:80"
+2020/05/19 13:35:04 [error] 12384#6912: *73 access forbidden by rule, client: 23.31.209.205, server: localhost, request: "POST /cgi-bin/mainfunction.cgi HTTP/1.1", host: "127.0.0.1"
+2020/05/19 13:45:25 [notice] 11624#6164: signal process started

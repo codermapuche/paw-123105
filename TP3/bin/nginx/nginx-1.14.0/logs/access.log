@@ -547,3 +547,5 @@
 127.0.0.1 - - [23/Apr/2020:00:06:16 -0300] "GET /turnos/ver?id=7 HTTP/1.1" 200 989464 "http://localhost/turnos/index" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36"
 127.0.0.1 - - [23/Apr/2020:00:06:18 -0300] "GET /turnos/index HTTP/1.1" 200 834 "http://localhost/turnos/ver?id=7" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36"
 127.0.0.1 - - [23/Apr/2020:00:50:07 -0300] "GET /turnos/borrar?id=7 HTTP/1.1" 200 547 "http://localhost/turnos/index" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36"
+127.0.0.1 - - [19/May/2020:12:45:22 -0300] "GET /turnos/index HTTP/1.1" 200 547 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36"
+127.0.0.1 - - [19/May/2020:12:45:25 -0300] "GET /turnos/nuevo HTTP/1.1" 200 2228 "http://localhost/turnos/index" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36"

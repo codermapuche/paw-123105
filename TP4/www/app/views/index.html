@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block header %}
+	{{ include('partials/header.html') }}
+{% endblock %}
+
+{% block main %}
+<h1>Turnos</h1>
+
+<table border="1">
+	<tr>
+		<th>Fecha</th>
+		<th>Hora</th>
+		<th>Paciente</th>
+		<th>Telefono</th>
+		<th>Email</th>
+		<th>Acciones</th>
+	</tr>
+	
+	{% for turno in turnos %}	
+	<tr>
+		<td>{{ turno.turno }}</td>
+		<td>{{ turno.horario }}</td>
+		<td>{{ turno.nombre }}</td>
+		<td>{{ turno.telefono }}</td>
+		<td>{{ turno.email }}</td>
+		<td>
+			<ul>
+				<li>
+					<a href="/turnos/editar?id={{ turno.id }}">Editar</a>
+				</li>
+				<li>
+					<a href="/turnos/ver?id={{ turno.id }}">Ver</a>
+				</li>
+				<li>
+					<a href="/turnos/borrar?id={{ turno.id }}">Borrar</a>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	{% else %}
+	<tr>
+		<td colspan="6">No hay turnos registrados</td>
+	</tr>
+	{% endfor %}
+</table>
+{% endblock %}
