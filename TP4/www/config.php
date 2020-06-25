@@ -4,9 +4,9 @@ use Monolog\Logger as MonologLogger;
 
 return [
     'database' => [
-        'name' => 'turnero',
-        'username' => 'root',
-        'password' => '',
+        'name' => 'paw',
+        'username' => 'paw',
+        'password' => 'paw',
         'connection' => 'mysql:host=127.0.0.1',
         'options' => [
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
